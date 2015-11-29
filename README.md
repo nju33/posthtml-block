@@ -1,5 +1,7 @@
 # posthtml-block
 
+[![npm version](https://badge.fury.io/js/posthtml-block.svg)](https://badge.fury.io/js/posthtml-block)
+
 [PostHTML](https://github.com/posthtml/posthtml) plugin that create component block element
 
 ## Install
