@@ -1,0 +1,5 @@
+.gitignore
+npm-debug.log
+test/
+example/
+node_modules/
