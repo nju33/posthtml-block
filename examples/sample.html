@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+</head>
+<body>
+  <block block-name="post" block-tag="article" class="post__box">
+    <header class="post__header">
+      <h1 block-text="title"></h1>
+    </header>
+    <div class="post__body">
+      <div block-content></div>
+    </div>
+    <div class="post__footer">
+      <span block-text="year"></span>
+      <span block-text="month"></span>
+      <span block-text="day"></span>
+    </div>
+  </block>
+
+  <post title="title 1" year="1" month="1" day="1">
+    <p class="post__paragraph">example content 1</p>
+  </post>
+
+  <post title="title 2" year="1" month="1" day="1">
+    <p class="post__paragraph">example content 2</p>
+  </post>
+</body>
+</html>
