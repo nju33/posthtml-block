@@ -5,14 +5,13 @@ export default class Block {
     this.node = node;
     this.textNode = {};
     this.contentNode = null;
-    this.init();
   }
 
   get name() {
     return this.node.attrs['block-name'];
   }
 
-  init() {
+  init(blocks) {
     if (!hasChildren(this.node)) {
       return;
     }
@@ -27,6 +26,15 @@ export default class Block {
         if (!childNode) {
           return false;
         } else if (typeof childNode === 'object') {
+          const idx = _.findIndex(blocks, {name: childNode.tag});
+          if (~idx) {
+            Object.assign(childNode, blocks[idx].node);
+            childNode.tag = _.get(childNode, 'attrs["block-tag"]', 'div');
+            childNode.attrs = _.omit(childNode.attrs, [
+              'block-name',
+              'block-tag'
+            ]);
+          }
           loop.call(this, childNode);
           return true;
         } else if (typeof childNode === 'string' && !/^\s+$/.test(childNode)) {

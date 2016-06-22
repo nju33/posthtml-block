@@ -21,6 +21,12 @@ Create .html file. (e.g. index.html)
 <head>
 </head>
 <body>
+  <block block-name="post-footer" class="post-footer__box">
+    <span block-text="year"></span>
+    <span block-text="month"></span>
+    <span block-text="day"></span>
+  </block>
+
   <block block-name="post" block-tag="article" class="post__box">
     <header class="post__header">
       <h1 block-text="title"></h1>
@@ -28,11 +34,7 @@ Create .html file. (e.g. index.html)
     <div class="post__body">
       <div block-content></div>
     </div>
-    <div class="post__footer">
-      <span block-text="year"></span>
-      <span block-text="month"></span>
-      <span block-text="day"></span>
-    </div>
+    <post-footer></post-footer>
   </block>
 
   <post title="title 1" year="1" month="1" day="1">
@@ -78,7 +80,7 @@ Output like this
           <p class="post__paragraph">example content 1</p>
         </div>
       </div>
-      <div class="post__footer">
+      <div class="post-footer__box">
         <span>1</span>
         <span>1</span>
         <span>1</span>
@@ -93,10 +95,10 @@ Output like this
           <p class="post__paragraph">example content 2</p>
         </div>
       </div>
-      <div class="post__footer">
-        <span>1</span>
-        <span>1</span>
-        <span>1</span>
+      <div class="post-footer__box">
+        <span>2</span>
+        <span>2</span>
+        <span>2</span>
       </div>
     </article>
   </body>

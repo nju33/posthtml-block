@@ -8,8 +8,9 @@ export default function block(tree) {
       return;
     }
     blocks.push(new Block(blockNode));
-    return;
   });
+
+  _.forEach(blocks, block => block.init(blocks));
 
   _.forEach(blocks, block => {
     tree.match({tag: block.name}, node => {
