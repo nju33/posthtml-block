@@ -41,7 +41,7 @@ Create .html file. (e.g. index.html)
     <p class="post__paragraph">example content 1</p>
   </post>
 
-  <post title="title 2" year="1" month="1" day="1">
+  <post title="title 2" year="2" month="2" day="2">
     <p class="post__paragraph">example content 2</p>
   </post>
 </body>
@@ -53,7 +53,7 @@ Transform it, Use the this plugin and **PostHTML** (e.g. posthtml.js)
 ```javascript
 const fs = require('fs');
 const posthtml = require('posthtml');
-const block = require('..');
+const block = require('posthtml-block');
 const pretty = require('pretty');
 
 const html = fs.readFileSync('./sample.html', 'utf-8');
