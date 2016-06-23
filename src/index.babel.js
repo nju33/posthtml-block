@@ -15,7 +15,7 @@ export default function block(tree) {
   _.forEach(blocks, block => {
     tree.match({tag: block.name}, node => {
       const rendered = block.render(node.attrs, node.content);
-      return rendered.node;
+      return rendered;
     });
   });
 }

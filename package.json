@@ -1,6 +1,6 @@
 {
   "name": "posthtml-block",
-  "description": "PostHTML plugin that create component block element",
+  "description": "PostHTML plugin that to create block element (like a component)",
   "version": "1.0.0",
   "author": {
     "name": "nju33",
