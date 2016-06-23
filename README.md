@@ -26,12 +26,12 @@ Create .html file.
     <span block-text="day"></span>
   </block>
 
-  <block block-name="post" block-tag="article" block-attr-class="class" class="post__box">
+  <block block-name="post" block-tag="article" block-attr-class class="post__box">
     <header class="post__header">
       <h1 block-text="title"></h1>
     </header>
     <div class="post__body">
-      <img class="blocks__eyecatching" block-attr-src="src" block-attr-alt="alt">
+      <img class="blocks__eyecatching" block-attr-src block-attr-alt>
       <div block-content></div>
     </div>
     <post-footer></post-footer>
