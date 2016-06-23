@@ -9,17 +9,19 @@
     <span block-text="day"></span>
   </block>
 
-  <block block-name="post" block-tag="article" class="post__box">
+  <block block-name="post" block-tag="article" block-attr-class="class" class="post__box">
     <header class="post__header">
       <h1 block-text="title"></h1>
     </header>
     <div class="post__body">
+      <img class="blocks__eyecatching" block-attr-src="src" block-attr-alt="alt">
       <div block-content></div>
     </div>
     <post-footer></post-footer>
   </block>
 
-  <post title="title 1" year="1" month="1" day="1">
+  <post title="title 1" year="1" month="1" day="1" class="post--first"
+    src="image.png" alt="block image">
     <p class="post__paragraph">example content 1</p>
   </post>
 
