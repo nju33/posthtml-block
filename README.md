@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/totora0155/posthtml-block.svg?branch=master)](https://travis-ci.org/totora0155/posthtml-block)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
-<p><img width="20" src="https://camo.githubusercontent.com/4f0f92bada37893db0a761078a6c1b2fb7dfef14/687474703a2f2f706f737468746d6c2e6769746875622e696f2f706f737468746d6c2f6c6f676f2e737667"> <a href="https://github.com/posthtml/posthtml">PostHTML</a> plugin that to create block element (like a component)</p>
+<p><img width="20" src="https://camo.githubusercontent.com/4f0f92bada37893db0a761078a6c1b2fb7dfef14/687474703a2f2f706f737468746d6c2e6769746875622e696f2f706f737468746d6c2f6c6f676f2e737667"> <a href="https://github.com/posthtml/posthtml">PostHTML</a> plugin to create block element (like a component)</p>
 
 ## Install
 ```
